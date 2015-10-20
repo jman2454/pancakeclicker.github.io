@@ -1,0 +1,49 @@
+p {
+font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+.tr{
+    cursor:pointer;
+}
+.game {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1300px;
+}
+.shop {
+    overflow-y: auto;
+    height: auto
+}
+.cookie {
+    margin: 0 auto;
+ }
+ 
+ nav {
+    position:fixed;
+    width:100%;
+    height:70px;
+    background-color:black;
+    top:0px;
+    left:0px;
+    color:white;
+ }
+ li {
+    list-style-type: none;
+    float:left;
+ }
+ ul {
+    list-style-type: none;
+ }
+ body {
+    padding-top:70px;
+ }
+ .nav {
+    display: block;
+    line-height:35px;
+    padding:5px;
+    border-radius: 5px;
+ }
+ .nav:hover {
+    background-color:lightgrey;
+    cursor:pointer;
+ }

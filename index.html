@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/ico" href="ico/favicon.ico" />
+    <title>Pancake clicker</title>
+    <script src="pclicker.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css.css">
+    <script src="shop.js" type="text/javascript"></script>
+</head>
+
+<body style="background-color:cyan">
+    <nav>
+        <li>
+            <ul>
+                <li class='nav'>
+                    Home
+                </li>
+            </ul>
+        </li>
+        
+    </nav>
+
+            <div class="shop" id="shop" style="float:left; display:block;">
+                <script type="text/javascript">
+                    setInterval(function () {
+                        TitleUpdate()
+                    }, 5)
+                </script>
+                <table id="myImage" class="table" border="3" bordercolor="#FFCC00" style="background-color:#FFFFCC" width="100%" cellpadding="3" cellspacing="3">
+                    <tr style="cursor:pointer" onclick="buyGrandma()">
+                        <td>
+                            <p>Aunt Jemima $<span id="gprice"></span>:</p>
+                            <script type="text/javascript">
+                                setInterval(function () {
+                                    el = document.getElementById("gprice");
+                                    el.innerHTML = gprice;
+                                }, 1000)
+                            </script>
+                            <div style="float:right">
+                                <img src="ico/jemima.ico" />
+                            </div>
+                            <p id="grandmasale">Click here to buy an Aunt Jemima</p>
+                        </td>
+                    </tr>
+                    <tr style="cursor:pointer" onclick="buyFarm()">
+                        <td>
+                            <p>Farm $<span id="farmprice"></span>:</p>
+                            <script type="text/javascript">
+                                setInterval(function () {
+                                    el = document.getElementById("farmprice");
+                                    el.innerHTML = farmprice;
+                                }, 1000)
+                            </script>
+                            <div style="float:right">
+                                <img src="ico/farm.ico" />
+                            </div>
+                            <p id="farmsale">Click here to buy a farm</p>
+                        </td>
+                    </tr>
+                    <tr style="cursor:pointer" onclick="buyFactory()">
+                        <td>
+                            <p>Factory $<span id="factoryprice"></span>:</p>
+                            <script type="text/javascript">
+                                setInterval(function () {
+                                    el = document.getElementById("factoryprice");
+                                    el.innerHTML = factoryprice;
+                                }, 1000)
+                            </script>
+                            <div style="float:right">
+                                <img src="ico/factory.ico" />
+                            </div>
+                            <p id="factorysale">Click here to buy a factory</p>
+                        </td>
+                    </tr>
+                    <tr style="cursor:pointer" onclick="buyKitchen()">
+                        <td>
+                            <p>Kitchen $<span id="kitchenprice"></span>:</p>
+                            <script type="text/javascript">
+                                setInterval(function () {
+                                    el = document.getElementById("kitchenprice");
+                                    el.innerHTML = kitchenprice;
+                                }, 1000)
+                            </script>
+                            <div style="float:right">
+                                <img src="ico/kitchen.ico" />
+                            </div>
+                            <p id="kitchensale">Click here to buy a kitchen</p>
+                        </td>
+                    </tr>
+                    <tr style="cursor:pointer" onclick="buyIhop()">
+                        <td>
+                            <p>iHop $<span id="ihopprice"></span>:</p>
+                            <script type="text/javascript">
+                                setInterval(function () {
+                                    el = document.getElementById("ihopprice");
+                                    el.innerHTML = Beautify(ihopprice);
+                                }, 1000)
+                            </script>
+                            <p id="ihopsale">Click here to buy an iHop restaurant!</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    <div align="center" class="cookie">
+        <h1><span id="message">0</span> Pancakes!</h1>
+        <p>PPS: <span id="pps"></span>
+        </p>
+        <script type="text/javascript">
+            setInterval(function () {
+                el = document.getElementById("pps");
+                el.innerHTML = pps;
+            }, 500)
+        </script>
+        <img style="cursor:pointer" src="http://0.tqn.com/d/webclipart/1/0/q/E/5/Pancakes.png" width="150" height="150" name="image_name" onmousedown="image_name.width='125';image_name.height='125';" onmouseup="image_name.width='150';image_name.height='150';"
+        onclick="clickCookie(); TitleUpdate()">
+        </img>
+    </div>
+    <div align="left">
+</body>
+
+</html>
